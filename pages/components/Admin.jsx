@@ -83,12 +83,12 @@ const Getter = () => {
 
           <div className="flex items-center mt-3">
             {/* Get the next pending complaint ID that needs to be approved*/}
-            <button
+                    {/*<button
               className="button-common hover:bg-green-500"
               onClick={getPendingApprovals}
             >
               Next Pending Approval ID
-            </button>
+    </button>*/}
             {pendingApprovals && (
               <p className="getter-card-number">
                 : {pendingApprovals.toString()}
@@ -141,15 +141,15 @@ const Getter = () => {
 
         {/* --------------- Pending RESOLUTION Section:*/}
         <div className="getter-card md:m-5">
-          <p className="getter-card-title">Pending Resolutions</p>
+                <p className="getter-card-title">Pending Resolutions</p>
           <div className="flex items-center mt-3">
             {/*Get the next pending Resolution ID that needs to be approved*/}
-            <button
+            {/*<button
               className="button-common hover:bg-green-500"
               onClick={getPendingResolutions}
             >
               Next Pending Resolution ID
-            </button>
+            </button>*/}
             {pendingResolutions && (
               <p className="getter-card-number">
                 : {pendingResolutions.toString()}
