@@ -31,21 +31,38 @@ const Complaint = () => {
     };
 
     return (
-        <div className='complaint-container md: mr-[50px] md:ml-[50px]'>
-            <p className="complaint-title-red">File Your Complaint Here:</p>
-            <div className='md:flex items-center'>
-                <p className='complaint-text-margin'>Title: </p>
-                <input type="text" className='container-input md:w-[500px] w-[300px]' placeholder='Enter Title Here'
-                    onChange={(e) => { setTitle(e.target.value) }} />
-            </div>
-            <div className='md:flex items-center'>
-                <p className='complaint-text-normal'>Description: </p>
-                <input type="text" className='container-input md:w-[500px] w-[300px]' placeholder='Enter Description Here'
-                    onChange={(e) => { setDescription(e.target.value) }} />
-            </div>
-            <button className="button-common hover:bg-blue-900" onClick={handleComplaint}>File Complaint</button>
+      <div className="complaint-container md: mr-[50px] md:ml-[50px]">
+        <p className="complaint-title-red">Describe Your Complaint </p>
+        <div className="md:flex items-center justify-between">
+          <p className="complaint-text-margin">Title: </p>
+          <input
+            type="text"
+            className="container-input md:w-[500px] w-[300px] container-input md:w-[500px] w-[300px] block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 0 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter Description Here"
+            onChange={(e) => {
+              setTitle(e.target.value);
+            }}
+          />
         </div>
-    )
+        <div className="md:flex items-center">
+          <p className="complaint-text-normal">Description: </p>
+          <textarea
+            type="text"
+            className="container-input md:w-[500px] w-[300px] block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 0 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter Description Here"
+            onChange={(e) => {
+              setDescription(e.target.value);
+            }}
+          />
+        </div>
+        <button
+          className="button-common hover:bg-blue-900"
+          onClick={handleComplaint}
+        >
+          File Complaint
+        </button>
+      </div>
+    );
 }
 
 export default Complaint

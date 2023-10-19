@@ -12,19 +12,19 @@ export default function Home() {
   const { data: officer } = useContractRead(contract, "officer")
 
   return (
-    <div className="" >
+    <div className="">
       <Head>
         <title>Complaint App</title>
         <meta name="description" content="This is a police complaint app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Complaint />
-      <Status />
-      {officer === address && (
-      <Admin />
-      )}
+      <div className='comp-stat'>
+        <Complaint />
+        <Status />
+      </div>
+      {officer === address && <Admin />}
     </div>
-  )
+  );
 }
   
