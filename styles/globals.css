@@ -37,19 +37,19 @@ body {
     }
 
     .status-container {
-        @apply flex flex-col justify-center 
+        @apply flex flex-col justify-center mt-3
     }
 
     .status {
-        @apply text-center m-2 p-1 bg-[#AAC4FF] rounded-lg border border-b-gray-800
+        @apply w-[38rem] text-center m-1 mt-2 mb-3 p-1 bg-[#F99417] rounded-lg border
     }
 
     .status-title {
-        @apply text-3xl font-bold p-1 mb-4 underline
+        @apply text-3xl font-bold p-1 mb-4 text-[#252443]
     }
 
     .status-text {
-        @apply text-2xl font-semibold m-1
+        @apply text-2xl font-semibold m-1 
     }
 
     .status-input {
@@ -57,15 +57,15 @@ body {
     }
 
     .status-render-container {
-        @apply w-[450px] bg-[#AAC4FF] rounded-lg border border-b-gray-800
+        @apply w-[450px] bg-[#4D4C7D] rounded-lg border p-2 self-center
     }
 
     .status-render-title {
-        @apply text-2xl font-bold p-1 mb-4 underline text-center
+        @apply text-2xl font-bold p-1 mb-4 text-center text-[#F99417]
     }
 
     .status-render-text {
-        @apply font-semibold ml-2
+        @apply font-semibold ml-2 text-[#52e4a4]
     }
 
     .container-input {
