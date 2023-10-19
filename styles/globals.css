@@ -9,7 +9,7 @@ body {
 
 @layer components {
     .header-container {
-        @apply flex justify-between p-2 bg-[#1e1f4d]
+        @apply flex justify-between p-2 border-b-2 bg-gradient-to-l from-blue-700 via-blue-800 to-gray-900
     }
 
     .header-logo {
