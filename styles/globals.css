@@ -73,15 +73,15 @@ body {
     }
 
     .getter-container {
-        @apply flex flex-col justify-between p-[5px] m-2 bg-[#A3C7D6] rounded-lg
+        @apply h-[26rem] flex flex-col justify-between p-[5px] m-2 bg-[#363062] rounded-lg
     }
 
     .getter-card {
-        @apply flex flex-col border w-full items-center pb-2 bg-[#92a5d0] rounded-lg
+        @apply flex flex-col border w-full items-center pb-2 bg-[#323150] rounded-lg
     }
 
     .getter-card-title {
-        @apply p-2 font-semibold text-2xl
+        @apply pt-6 font-semibold text-2xl text-[#F99417]
     }
 
     .getter-card-number {
@@ -93,7 +93,7 @@ body {
     }
 
     .button-common {
-        @apply bg-[#a6ba0a] p-2 rounded-md font-semibold text-white m-2
+        @apply bg-[#a6ba0a] p-2 rounded-md font-semibold text-black m-2
     }
 
 }

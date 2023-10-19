@@ -38,7 +38,7 @@ const Complaint = () => {
           <input
             type="text"
             className="container-input md:w-[500px] w-[300px] container-input md:w-[500px] w-[300px] block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 0 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Enter Description Here"
+            placeholder="Enter Title Here"
             onChange={(e) => {
               setTitle(e.target.value);
             }}
@@ -56,7 +56,7 @@ const Complaint = () => {
           />
         </div>
         <button
-          className="button-common hover:bg-blue-900"
+          className="button-common hover:bg-green-500"
           onClick={handleComplaint}
         >
           File Complaint
