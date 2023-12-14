@@ -24,7 +24,7 @@ const Header = () => {
           className="button-common hover:bg-green-500"
           onClick={handleCheckStatus}
         >
-          check status
+          Check FIR status
         </button>
 
         <ConnectWallet accentColor="blue" colorMode="light" />

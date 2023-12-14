@@ -32,18 +32,21 @@ const Status = () => {
           <div className="status-render-container md:w-[600px]">
             <p className="status-render-title">Complaint Details</p>
             <p className="status-render-text">
-              Complaint Id : {Complaints.id.toString()}
+              <span className="text-yellow-500"> Complaint Id : </span>{" "}
+              {Complaints.id.toString()}
             </p>
             <p className="status-render-text">
-              Complaint by : {Complaints.complaintRegisteredBy.toString()}
+              <span className="text-yellow-500"> Complaint by : </span>{" "}
+              {Complaints.complaintRegisteredBy.toString()}
             </p>
             <p className="status-render-text">
-              Complaint Title : {Complaints.title}
+              <span className="text-yellow-500"> Complaint Title : </span>{" "}
+              {Complaints.title}
             </p>
 
             {/* Checking whether complain is approved or not:*/}
             <p className="status-render-text">
-              Approval Status :{" "}
+              <span className="text-yellow-500">Approval Status : </span>{" "}
               {Complaints.isApproved
                 ? "Approved"
                 : !Complaints.exists
@@ -51,14 +54,14 @@ const Status = () => {
                 : "Approval Pending"}
             </p>
             <p className="status-render-text">
-              Approval Remark : {Complaints.approvalRemark}
+              <span className='text-yellow-500'>Approval Remark :</span> {Complaints.approvalRemark}
             </p>
             <p className="status-render-text">
-              Resolution Status :{" "}
+              <span className='text-yellow-500'>Resolution Status :</span>{" "}
               {Complaints.isResolved ? "Resolved" : "Resolution pending"}
             </p>
             <p className="status-render-text mb-2">
-              Resolution Remark : {Complaints.resolutionRemark}
+              <span className='text-yellow-500'>Resolution Remark :</span> {Complaints.resolutionRemark}
             </p>
           </div>
         )}
