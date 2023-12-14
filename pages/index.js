@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Complaint from './components/Complaint'
 import Admin from './components/Admin'
 import Header from './components/Header'
-import Status from './components/Status'
+// import Status from './components/Status'
 import { useAddress, useContract, useContractRead } from "@thirdweb-dev/react";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
       <Header />
       <div className='comp-stat'>
         <Complaint />
-        <Status />
+        
       </div>
       {officer === address && <Admin />}
     </div>
