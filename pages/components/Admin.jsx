@@ -96,7 +96,7 @@ const Getter = () => {
             )}
           </div>
 
-          <div className="md:flex items-center">
+          <div className="3">
             {/*Taking input of compaint ID.*/}
             <p className="text-2xl font-semibold mr-7 text-white">Complaint Id: </p>
             <input
